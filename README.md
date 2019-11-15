@@ -1,22 +1,18 @@
-Given a valid (IPv4) IP address, return a defanged version of that IP address.
+You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.
 
-A defanged IP address replaces every period "." with "[.]".
-
- 
+The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so "a" is considered a different type of stone from "A".
 
 Example 1:
 
-Input: address = "1.1.1.1"
-Output: "1[.]1[.]1[.]1"
+Input: J = "aA", S = "aAAbbbb"
+Output: 3
 
 Example 2:
 
-Input: address = "255.100.50.0"
-Output: "255[.]100[.]50[.]0"
+Input: J = "z", S = "ZZ"
+Output: 0
 
- 
+Note:
 
-Constraints:
-
-    The given address is a valid IPv4 address.
-
+    S and J will consist of letters and have length at most 50.
+    The characters in J are distinct.
